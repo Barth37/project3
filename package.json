@@ -1,0 +1,25 @@
+{
+  "name": "cookbook",
+  "version": "1.0.0",
+  "description": "recipe finder app",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Barth37/project3.git"
+  },
+  "author": "crystal, dominique, jake, brian and dj",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Barth37/project3/issues"
+  },
+  "homepage": "https://github.com/Barth37/project3#readme",
+  "dependencies": {
+    "axios": "^0.19.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.6.0"
+  }
+}
