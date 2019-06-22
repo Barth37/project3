@@ -1,5 +1,6 @@
-dbPassword = 'mongodb+srv://Barth37:PeRrIn@37@firstcluster-my9am.mongodb.net/test?retryWrites=true&w=majority';
+//let mypass = "PeRrIn!37";
+//let dbPassword = 'mongodb+srv://Barth37:' + encodeURIComponent(mypass) + '@firstcluster-my9am.mongodb.net/test?retryWrites=true&w=majority';
 
 module.exports = {
-    mongoURI: dbPassword
+    MongoURI: 'mongodb+srv://Barth0037:PeRrIn37@cluster1-my9am.mongodb.net/test?retryWrites=true&w=majority'
 };

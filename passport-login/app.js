@@ -1,11 +1,18 @@
-const express = require ('express');
+const express = require('express');
 const expressLayouts = require('express-ejs-layouts');
 const mongoose = require('mongoose');
+const flash = require('connect-flash');
+const session = require('express-session');
+const passport = require('passport');
+const ejsLint = require('ejs-lint');
 
 const app = express();
 
+// Passport config
+require('./config/passport');
+
 //  DB config
-const db = require('./config/keys').mongoURI;
+const db = require('./config/keys').MongoURI;
 
 // Connect to Mongo
 mongoose.connect(db, { useNewUrlParser: true })
@@ -18,6 +25,28 @@ app.set('view engine', 'ejs');
 
 // Body Parser
 app.use(express.urlencoded({ extended: false }));
+
+// Express session
+app.use(session({
+    secret: 'secret',
+    resave: true,
+    saveUninitialized: true
+}));
+
+// Passsport middleware
+app.use(passport.initialize());
+app.use(passport.session());
+
+// Connect flash
+app.use(flash());
+
+// Global vars
+app.use((req, res, next) => {
+    res.locals.success_msg = req.flash('success_msg');
+    res.locals.error_msg = req.flash('error_msg');
+    res.locals.error_msg = req.flash('error');
+    next();
+});
 
 // Routes
 app.use('/', require('./routes/index'));
