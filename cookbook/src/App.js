@@ -4,6 +4,7 @@ import './App.css';
 import Form from './components/sign-up/sign-up';
 import Login from './components/login/login';
 import Search from './components/search-ingr/search';
+import Jumbotron from './components/header/header';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Form/>
       <Login/>
       <Search/>
+      <Jumbotron/>
       
         <img src={logo} className="App-logo" alt="logo" />
         <p>
