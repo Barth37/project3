@@ -9,7 +9,7 @@ export default class Login extends React.Component {
 
     render() {
         return (
-            <form class="sign-up">
+            <form class="log-in">
                 <p>Email</p>
                 <div class="ui input">
                     <input type="text" placeholder="Email" value={this.state.username}/>
@@ -18,6 +18,7 @@ export default class Login extends React.Component {
                 <div class="ui input">
                     <input type="text" placeholder="Password" value={this.state.email}/>
                 </div>
+                <br></br>
                 <button class="ui button">
                 Submit                
                 </button>
