@@ -16,7 +16,7 @@ if (process.env.NODE_ENV === "production") {
 app.use("/api", apiRoutes);
 
 // Connect to the Mongo DB
-const MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/recipes";
+const MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/recipes" || "mongodb://localhost/user";
 mongoose.connect(MONGODB_URI, { useNewUrlParser: true});
 
 // Send every request to the React app
@@ -24,7 +24,7 @@ mongoose.connect(MONGODB_URI, { useNewUrlParser: true});
 app.get("*", function(req, res) {
   res.sendFile(path.join(__dirname, "./cookbook/build/index.html"));
 });
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/recipes");
+mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/recipes" || "mongodb://localhost/user");
 
 // Start the API server
 app.listen(PORT, function() {
