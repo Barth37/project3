@@ -1,5 +1,8 @@
 .jumbotron {
-    min-height: 300px;
-    padding-top: 100px;
-    background-color: red;
+    height: -5%;
+    padding-top: 2%;
+  }
+
+  .mainLogo {
+    height: 45%;
   }
