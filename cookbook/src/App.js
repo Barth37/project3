@@ -1,7 +1,6 @@
 import React from 'react';
 import Jumbotron from "./components/jumbotron/style";
 import './App.css';
-// import Form from './components/sign-up/sign-up';
 import Search from './components/search-ingr/search';
 
 function App() {
@@ -9,7 +8,6 @@ function App() {
     <div className="App">
         <h1> Tasty recipes for every ingredient</h1>
       <Jumbotron/>
-      {/* <Form/> */}
       <Search/>
     </div>
   );
