@@ -1,33 +1,14 @@
 import React from 'react';
-import logo from './logo.svg';
 import Jumbotron from "./components/jumbotron/style";
 import './App.css';
-import Form from './components/sign-up/sign-up';
-import Login from './components/login/login';
 import Search from './components/search-ingr/search';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-      <Form/>
-      <Login/>
-      <Search/>
+        <h1> Tasty recipes for every ingredient</h1>
       <Jumbotron/>
-      
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Search/>
     </div>
   );
 }
