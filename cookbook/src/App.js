@@ -2,6 +2,8 @@ import React from 'react';
 import Jumbotron from "./components/jumbotron/style";
 import './App.css';
 import Search from './components/search-ingr/search';
+import Sign from './components/sign-up/sign-up';
+
 
 function App() {
   return (
@@ -9,6 +11,7 @@ function App() {
         <h1> Tasty recipes for every ingredient</h1>
       <Jumbotron/>
       <Search/>
+      <Sign/>
     </div>
   );
 }
