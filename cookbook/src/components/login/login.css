@@ -1,0 +1,14 @@
+.input {
+    border: solid 3px black;
+    text-align: center;
+    margin: 10px 0;
+    width: 70%;
+ }
+ 
+ .log-in {
+     border: solid 3px black;
+ }
+ 
+ .button {
+     margin: 10px;
+ }
