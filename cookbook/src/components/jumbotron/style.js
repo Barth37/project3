@@ -1,15 +1,12 @@
 import React from "react";
 import "./style.css";
-import CookBookLogo from './CookBookLogo_Primary.png'
+import CookBookLogo from './CookBookLogo_Primary_red.png'
 
  export default function Jumbotron() {
   return (
-    <div className="jumbotron text-center">
-      <h1>Tasty Recipes For Every Ingredient</h1>
-      <img src= {CookBookLogo} alt="primary logo"></img>
-      <a target="_blank" rel="noopener noreferrer" href="http://www.recipepuppy.com/about/api/">
-        Powered by Recipe Puppy
-      </a>
+    <div className="jumbotron text-center" >
+      <img class="mainLogo" src= {CookBookLogo} alt="primary logo"></img>
+     
     </div>
   );
 }
