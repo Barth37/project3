@@ -23,7 +23,7 @@ mongoose.connect(MONGODB_URI, { useNewUrlParser: true});
 // Send every request to the React app
 // Define any API routes before this runs
 app.get("*", function(req, res) {
-  res.sendFile(path.join(__dirname, "./cookbook/build/index.html"));
+  res.sendFile(path.join(__dirname, "./cookbook/public/index.html"));
 });
 
 // Start the API server
