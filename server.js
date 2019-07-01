@@ -12,6 +12,7 @@ app.use(express.json());
 if (process.env.NODE_ENV === "production") {
   app.use(express.static("cookbook/build"));
 }
+
 // Add routes, both API and view
 app.use("/api", apiRoutes);
 
@@ -22,9 +23,8 @@ mongoose.connect(MONGODB_URI, { useNewUrlParser: true});
 // Send every request to the React app
 // Define any API routes before this runs
 app.get("*", function(req, res) {
-  res.sendFile(path.join(__dirname, "./cookbook/build/index.html"));
+  res.sendFile(path.join(__dirname, "./cookbook/public/index.html"));
 });
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/recipes");
 
 // Start the API server
 app.listen(PORT, function() {

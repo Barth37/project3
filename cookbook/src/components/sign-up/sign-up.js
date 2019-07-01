@@ -10,6 +10,12 @@ export default class Form extends React.Component {
 
     render() {
         return (
+            
+            <div id="loginBtn">
+                <button class="ui button">
+                    Login
+                </button>
+            
             <form class="sign-up">
                 <p>Username</p>
                 <div class="ui input">
@@ -28,6 +34,7 @@ export default class Form extends React.Component {
                 Submit                
                 </button>
             </form>
+            //  </div>
         );
     }
 

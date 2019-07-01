@@ -1,5 +1,5 @@
-import React from 'react';
-import './search.css';
+import React from "react";
+import "./search.css";
 
 export default class Search extends React.Component {
     state = {
@@ -8,12 +8,13 @@ export default class Search extends React.Component {
 
     render() {
         return (
-            <form class="search">
-            <p>Search by Ingredient</p>
-            <div class="ui input">
-                <input type="text" placeholder="Ingredient" value={this.state.ingredient}/>
-            </div>
-            </form>
+           <div class="ui fluid category search">
+  <div class="ui icon input">
+    <input class="prompt" type="text" placeholder="search ingredients"/>
+    <i class="search icon"></i>
+    </div>
+  <div class="results"></div>
+</div> 
         );
     }
 
