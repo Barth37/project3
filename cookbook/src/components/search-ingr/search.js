@@ -10,8 +10,8 @@ export default class Search extends React.Component {
         return (
            <div class="ui fluid category search">
   <div class="ui icon input">
-    <input class="prompt" type="text" placeholder="search ingredients"/>
-    <i class="search icon"></i>
+    <input class="prompt" id="ingredient-input" type="text" placeholder="search ingredients"/>
+    <i class="search icon" id="select-ingredient"></i>
     </div>
   <div class="results"></div>
 </div> 
