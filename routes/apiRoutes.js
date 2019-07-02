@@ -7,9 +7,9 @@ var db = require("../models");
 //user gets recipes from API - not authenticated
 router.get("/recipes", (req, res) => {
   axios
-    .get("http://api.edamam.com/search", { params: req.query })
-    .then(({ data: { results } }) => res.json(results))
-    .catch(err => res.status(422).json(err));
+  .get("https://api.edamam.com/search?q=' + ingredient + '&app_id=8b888a07&app_key=a9b6565744d4ce9f78b6d6fcd6448d54&limit=10", { params: req.query })
+  .then(({ data: { results } }) => res.json(results))
+  .catch(err => res.status(422).json(err));
 });
 
 router.route("/recipes")
@@ -21,10 +21,9 @@ router.route("/recipes")
 
 router.get("/user", (req, res) => {
   axios
-    .get("userdb", { params: req.query })
+    .get("user", { params: req.query })
     .then(({ data: { results } }) => res.json(results))
     .catch(err => res.status(422).json(err));
-
   });
   
 router.route("/user")
