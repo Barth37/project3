@@ -6,7 +6,8 @@ import API from "../../utils/API";
 class SearchResultContainer extends Component {
   state = {
     search: "",
-    results: []
+    results: null,
+    results2: [{title: '1'}, {title: 1}]
   };
 
   // When this component mounts, search the Giphy API for pictures of kittens
@@ -16,7 +17,7 @@ class SearchResultContainer extends Component {
 
   searchEdamam = query => {
     API.search(query)
-      .then(res => this.setState({ results: res.data.data }))
+      .then(res => this.setState({ results: res.data }))
       .catch(err => console.log(err));
   };
 
@@ -43,6 +44,7 @@ class SearchResultContainer extends Component {
           handleInputChange={this.handleInputChange}
         />
         <ResultList results={this.state.results} />
+
       </div>
     );
   }

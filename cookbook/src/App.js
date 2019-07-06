@@ -1,7 +1,7 @@
 import React from 'react';
 import Jumbotron from "./components/jumbotron/style";
 import './App.css';
-import SearchForm from './components/SearchIngredient';
+import SearchForm from './components/SearchIngredient/search';
 import Sign from './components/sign-up/sign-up';
 import SearchResultContainer from './components/Results/results';
 import ResultList from './components/List/list';
@@ -13,7 +13,6 @@ function App() {
     <div className="App">
         <h1> Tasty recipes for every ingredient</h1>
       <Jumbotron/>
-      <SearchForm/>
       <SearchResultContainer/>
       <Sign/>
       <ResultList/>
@@ -22,6 +21,14 @@ function App() {
 }
 
 export default App;
+
+
+
+
+
+
+
+
 
 
 //Psuedo code for flow of the app
