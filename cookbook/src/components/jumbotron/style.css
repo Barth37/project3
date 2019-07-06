@@ -4,5 +4,9 @@
   }
 
   .mainLogo {
-    height: 45%;
+    /* height: 45%; */
+  }
+
+  #picOne {
+    height: 15%;
   }
