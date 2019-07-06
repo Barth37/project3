@@ -1,14 +1,16 @@
 import React from 'react';
 import './list.css';
 
-export function List({ children }) {
-    return (
-        <div className="list-overflow-container">
-        <ul className="list-group">{children}</ul>
-        </div>
-    );
+function ResultList(props) {
+  return (
+    <ul className="list-group">
+      {props.results.map(result => (
+        <li className="list-group-item" key={result.id}>
+          <img alt={result.title} className="img-fluid" src={result.images.original.url} />
+        </li>
+      ))}
+    </ul>
+  );
 }
 
-export function ListItem({ children }) {
-    return <li className="list-group-item">{children}</li>;
-}
+export default ResultList;

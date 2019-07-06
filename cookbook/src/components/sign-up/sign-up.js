@@ -19,15 +19,15 @@ export default class Form extends React.Component {
             <form class="sign-up">
                 <p>Username</p>
                 <div class="ui input">
-                    <input type="text" placeholder="Username" value={this.state.username}/>
+                    <input type="text" placeholder="Username" />
                 </div>
                 <p>Email</p>
                 <div class="ui input">
-                    <input type="text" placeholder="Email" value={this.state.email}/>
+                    <input type="text" placeholder="Email" />
                 </div>
                 <p>Password</p>
                 <div class="ui input">
-                    <input type="text" placeholder="Password" value={this.state.password}/>
+                    <input type="text" placeholder="Password" />
                 </div>
                 <br></br>
                 <button class="ui button">

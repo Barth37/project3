@@ -1,8 +1,11 @@
 import React from 'react';
 import Jumbotron from "./components/jumbotron/style";
 import './App.css';
-import Search from './components/search-ingr/search';
+import SearchForm from './components/SearchIngredient';
 import Sign from './components/sign-up/sign-up';
+import SearchResultContainer from './components/Results/results';
+import ResultList from './components/List/list';
+
 
 
 function App() {
@@ -10,8 +13,10 @@ function App() {
     <div className="App">
         <h1> Tasty recipes for every ingredient</h1>
       <Jumbotron/>
-      <Search/>
+      <SearchForm/>
+      <SearchResultContainer/>
       <Sign/>
+      <ResultList/>
     </div>
   );
 }
