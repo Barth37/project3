@@ -22,49 +22,58 @@ router.get('/recipes/:ingredient', (req, res) => {
 //find all recipes in database
 router.get('/v1/recipes/', (req, res) => {
   recipeController.findAll();
+  console.log("Find all recipes is working");
 });
 
 //find all recipes based on keyword in database
 router.get('/v1/recipes/:ingredient', (req, res) => {
   recipeController.findAll();
+  console.log("Find recipe by ingredient is working");
 });
 
 //find one recipe based on keyword in database
 router.get('/v1/recipes/:id', (req, res) => {
   var id = req.params.id;
   recipeController.findById();
+  console.log("Find recipe by id is working");
 });
 
 //save recipe
 router.put('/v1/recipes', (req, res) => {
   recipeController.create();
+  console.log("Create recipe is working");
 });
 
 //delete recipe
 router.delete('/v1/recipes/:id', (req, res) => {
   recipeController.remove();
+  console.log("Delete recipe is working");
 });
 
 //create and save user
 router.post('/v1/user', (req, res) => {
   userController.create();
+  console.log("Create user is working");
 });
 
 // find one user
 router.get('/v1/user/:id', (req, res) => {
   var id = req.params.id;
   userController.findById();
+  console.log("Find user by id is working");
 });
 //update user info
 router.put('/v1/user/:id', (req, res) => {
   var id = req.params.id;
   userController.update();
+  console.log("Update user by id is working");
 });
 
 //delete user
 router.delete('/v1/user/:id', (req, res) => {
   var id = req.params.id;
   userController.remove();
+  console.log("Delete user by id is working");
 });
 
 module.exports = router;
