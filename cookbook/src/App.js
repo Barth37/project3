@@ -1,7 +1,7 @@
 import React from 'react';
 import Jumbotron from "./components/jumbotron/style";
 import './App.css';
-import Sign from './components/sign-up/sign-up';
+// import Sign from './components/sign-up/sign-up';
 import SearchResultContainer from './components/Results/results';
 
 
@@ -11,6 +11,7 @@ function App() {
         <h1> Tasty recipes for every ingredient</h1>
       <Jumbotron/>
       {/* <Sign/> */}
+      <br/>
       <SearchResultContainer/>
     </div>
   );

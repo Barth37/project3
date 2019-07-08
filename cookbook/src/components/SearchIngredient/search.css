@@ -1,3 +1,7 @@
 #search-ingredient:hover {
     cursor: pointer;
 }
+
+hr {
+    color: transparent;
+}
