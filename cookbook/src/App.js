@@ -11,7 +11,6 @@ function App() {
     <div className="App">
         <h1> Tasty recipes for every ingredient</h1>
       <Jumbotron/>
-      <Search/>
       <Sign/>
       <SearchResultContainer/>
     </div>

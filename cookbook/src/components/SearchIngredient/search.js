@@ -4,8 +4,7 @@ import "./search.css";
 function SearchForm(props) {
     return (
       <form>
-        <div className="form-group">
-          <label htmlFor="search">Search:</label>
+        <div class ="ui input">
           <input
             onChange={props.handleInputChange}
             value={props.search}
@@ -15,7 +14,7 @@ function SearchForm(props) {
             placeholder="Search Ingredients"
             id="search"
           />
-          <button onClick={props.handleFormSubmit} className="btn btn-primary mt-3">
+          <button onClick={props.handleFormSubmit} class="ui button">
             Search
           </button>
         </div>
