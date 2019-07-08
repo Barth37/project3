@@ -1,8 +1,8 @@
 import React from 'react';
 import Jumbotron from "./components/jumbotron/style";
 import './App.css';
-import Search from './components/search-ingr/search';
 import Sign from './components/sign-up/sign-up';
+import SearchResultContainer from './components/Results/results';
 
 
 function App() {
@@ -10,8 +10,8 @@ function App() {
     <div className="App">
         <h1> Tasty recipes for every ingredient</h1>
       <Jumbotron/>
-      <Search/>
-      <Sign/>
+      {/* <Sign/> */}
+      <SearchResultContainer/>
     </div>
   );
 }
@@ -23,6 +23,8 @@ export default App;
 
 
 //Home page renders login button
+
+
 
 //Login button which goes to sign-up or sign-in
 

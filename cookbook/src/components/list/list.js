@@ -1,14 +1,25 @@
 import React from 'react';
 import './list.css';
 
-export function List({ children }) {
+function ResultList(props) {
     return (
-        <div className="list-overflow-container">
-        <ul className="list-group">{children}</ul>
+        <div class="ui vertical segment">
+            {props.results && props.results.hits.map(result => (
+                <div class="ui vertical segment" key={result.id}>
+                    <h2>{result.recipe.label}</h2>
+                    <img alt={result.recipe.label} className="img-fluid" src={result.recipe.image} />
+                    <br></br>
+                    <a href={result.recipe.url}>View Recipe</a>
+                    <div class="ui list">
+                        <ul>
+                            {result.recipe.healthLabels.map((item) => (<li>{item}</li>))}
+                        </ul>
+                    </div>
+                </div>
+            ))}
+            {props.results && console.log(props.results)}
         </div>
     );
 }
 
-export function ListItem({ children }) {
-    return <li className="list-group-item">{children}</li>;
-}
+export default ResultList;
