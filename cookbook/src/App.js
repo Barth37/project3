@@ -2,7 +2,7 @@ import React from 'react';
 import Jumbotron from "./components/jumbotron/style";
 import './App.css';
 // import Sign from './components/sign-up/sign-up';
-import SearchResultContainer from './components/Results/results';
+import SearchResultContainer from './components/results/results';
 
 
 function App() {
