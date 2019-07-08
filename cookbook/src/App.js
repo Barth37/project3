@@ -3,6 +3,7 @@ import Jumbotron from "./components/jumbotron/style";
 import './App.css';
 import Search from './components/search-ingr/search';
 import Sign from './components/sign-up/sign-up';
+import SearchResultContainer from './components/Results/results';
 
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
       <Jumbotron/>
       <Search/>
       <Sign/>
+      <SearchResultContainer/>
     </div>
   );
 }
