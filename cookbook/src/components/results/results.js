@@ -12,7 +12,7 @@ class SearchResultContainer extends Component {
 
   // When this component mounts, search the Edamam API for pictures of kittens
   componentDidMount() {
-    this.searchEdamam("apple");
+    this.searchEdamam("");
   }
 
   searchEdamam = query => {

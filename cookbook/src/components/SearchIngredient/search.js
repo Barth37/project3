@@ -4,7 +4,7 @@ import "./search.css";
 function SearchForm(props) {
     return (
       <form>
-        <div class ="ui input">
+        <div class ="ui icon input">
           <input
             onChange={props.handleInputChange}
             value={props.search}
@@ -14,6 +14,7 @@ function SearchForm(props) {
             placeholder="Search Ingredients"
             id="search"
           />
+          <i class="inverted circular search link icon"></i>
         </div>
         <div>
           <button onClick={props.handleFormSubmit} class="ui button">
