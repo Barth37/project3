@@ -5,3 +5,13 @@
 hr {
     color: transparent;
 }
+
+#search {
+    margin-bottom: 20px;
+    margin-top: 0px;
+    width: 350px;
+}
+
+#searchBtn {
+    width: 100px;
+}

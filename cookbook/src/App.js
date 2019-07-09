@@ -11,7 +11,7 @@ function App() {
       <Jumbotron/>
       {/* <Sign/> */}
       <br/>
-      <h1> Tasty recipes for every ingredient</h1>
+      <h1> Tasty Recipes For Every Ingredient</h1>
       <SearchResultContainer/>
     </div>
   );
