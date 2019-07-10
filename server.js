@@ -1,13 +1,14 @@
 const express = require('express');
 const mongoose = require('mongoose');
 var mongojs = require("mongojs");
-var logger = require("morgan");
+//var logger = require("morgan");
 const apiRoutes = require('./routes/apiRoutes');
 const app = express();
 const PORT = process.env.PORT || 3000;
 
+
 // Use morgan logger for logging requests
-app.use(logger("dev"));
+//app.use(logger("dev"));
 // Define middleware here
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
@@ -21,7 +22,7 @@ if (process.env.NODE_ENV === 'production') {
 console.log('the route api is next');
 app.use('/api', apiRoutes);
 
-Connect to the Mongo Recipes DB
+//Connect to the Mongo Recipes DB
 const MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/recipes";
 mongoose.connect(MONGODB_URI, { useNewUrlParser: true});
 
