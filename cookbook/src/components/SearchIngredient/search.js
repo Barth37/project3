@@ -14,11 +14,11 @@ function SearchForm(props) {
             placeholder="Search Ingredients"
             id="search"
           />
-          <i class="inverted circular search link icon"></i>
+          <i onClick={props.handleFormSubmit} class="inverted circular search link icon"></i>
         </div>
         <div>
-          <button onClick={props.handleFormSubmit} class="ui button">
-            Search
+          <button onClick={props.handleFormSubmit} class="ui button" id="submit">
+            Submit
           </button>
         </div>
       </form>

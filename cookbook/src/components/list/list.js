@@ -14,6 +14,9 @@ function ResultList(props) {
                         <div class="item">
                             {result.recipe.healthLabels.map((item) => (<li>{item}</li>))}
                         </div>
+                        <div class="ui divider">
+                        <button class="ui inverted button" id="save">Save Recipe</button>
+                        </div>
                     </div>
                 </div>
             ))}
