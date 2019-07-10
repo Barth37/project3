@@ -18,3 +18,8 @@
 .App-link {
   color: #61dafb;
 }
+
+#headerMain {
+  padding-bottom: -5%;
+  padding-top: 8.5%;
+}

@@ -8,10 +8,10 @@ import SearchResultContainer from './components/results/results';
 function App() {
   return (
     <div className="App">
+      <h1 id="headerMain"> Tasty recipes for every ingredient</h1>
       <Jumbotron/>
       {/* <Sign/> */}
       <br/>
-      <h1> Tasty recipes for every ingredient</h1>
       <SearchResultContainer/>
     </div>
   );
