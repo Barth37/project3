@@ -10,7 +10,7 @@ function App() {
     <div className="App">
       <Jumbotron/>
       {/* <Sign/> */}
-      <br/>
+      {/* <br/> */}
       <h1> Tasty Recipes For Every Ingredient</h1>
       <SearchResultContainer/>
     </div>

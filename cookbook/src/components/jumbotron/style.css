@@ -6,6 +6,12 @@
     height: 20%;
   }
 
+  .primary {
+    height: 625px;
+    width: 725px;
+    margin-bottom: -80px;
+    padding-bottom: 0px;
+  }
   /* #picOne {
     height: 15%;
   } */

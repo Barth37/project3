@@ -1,7 +1,8 @@
 .App {
   text-align: center;
   background: #d2232a; 
-  
+  margin-top: 0%;
+  padding-top: 0%;
 }
 
 .App-header {
@@ -18,3 +19,4 @@
 .App-link {
   color: #61dafb;
 }
+
