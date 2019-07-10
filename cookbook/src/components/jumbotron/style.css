@@ -1,12 +1,11 @@
 .jumbotron {
     height: 5%;
-    padding-top: 2%;
   }
 
-  .mainLogo {
-    /* height: 45%; */
+  #primaryLogo {
+    height: 20%;
   }
 
-  #picOne {
+  /* #picOne {
     height: 15%;
-  }
+  } */
