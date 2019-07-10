@@ -31,13 +31,15 @@
     "express-ejs-layouts": "^2.5.0",
     "express-session": "^1.16.2",
     "if-env": "^1.0.4",
+    "mongojs": "^2.6.0",
     "mongoose": "^5.6.0",
+    "morgan": "^1.9.1",
     "passport": "^0.4.0",
     "passport-local": "^1.0.0",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
     "semantic-ui-css": "^2.4.1",
-    "semantic-ui-react": "^0.87.2",
-    "morgan": "^1.9.1",
-    "mongojs": "^2.6.0"
+    "semantic-ui-react": "^0.87.2"
   },
   "devDependencies": {
     "concurrently": "^4.1.0",
