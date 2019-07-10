@@ -27,7 +27,7 @@ const MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/recipes";
 mongoose.connect(MONGODB_URI, { useNewUrlParser: true});
 
 // Use mongojs to hook the database to the db variable
-var db = mongojs(MONGODB_URI, collections);
+//var db = mongojs(MONGODB_URI, collections);
 
 // This makes sure that any errors are logged if mongodb runs into an issue
 db.on("error", function(error) {
