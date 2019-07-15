@@ -2,7 +2,7 @@ const express = require('express');
 const mongoose = require('mongoose');
 const apiRoutes = require('./routes/apiRoutes2');
 const app = express();
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3045;
 
 // Define middleware here
 app.use(express.urlencoded({ extended: true }));
@@ -17,7 +17,7 @@ if (process.env.NODE_ENV === 'production') {
 console.log('the route api is next');
 app.use('/api', apiRoutes);
 
-Connect to the Mongo Recipes DB
+//Connect to the Mongo Recipes DB
 const MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/recipes";
 mongoose.connect(MONGODB_URI, { useNewUrlParser: true});
 
