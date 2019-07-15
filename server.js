@@ -1,6 +1,6 @@
 const express = require('express');
 const mongoose = require('mongoose');
-const apiRoutes = require('./routes/apiRoutes2');
+//const apiRoutes = require('./routes/apiRoutes2');
 const app = express();
 const PORT = process.env.PORT || 3045;
 
@@ -15,7 +15,7 @@ if (process.env.NODE_ENV === 'production') {
 
 // Add routes, both API and view
 console.log('the route api is next');
-app.use('/api', apiRoutes);
+//app.use('/api', apiRoutes);
 
 //Connect to the Mongo Recipes DB
 const MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/recipes";
