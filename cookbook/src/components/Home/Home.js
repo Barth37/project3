@@ -4,7 +4,7 @@ import 'whatwg-fetch';
 import {
   getFromStorage,
   setInStorage,
-} from '../../utils/storage'
+} from '../../p3login/client/app/utils/storage';
 
 class Home extends Component {
   constructor(props) {
