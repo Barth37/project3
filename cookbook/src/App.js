@@ -3,15 +3,17 @@ import Jumbotron from "./components/jumbotron/style";
 import './App.css';
 // import Sign from './components/sign-up/sign-up';
 import SearchResultContainer from './components/results/results';
-
+import Home from './components/Home/Home';
 
 function App() {
   return (
     <div className="App">
+      <Home/>
+      <br/>
+      <h1 id="headerMain"> Tasty recipes for every ingredient</h1>
       <Jumbotron/>
       {/* <Sign/> */}
       <br/>
-      <h1> Tasty recipes for every ingredient</h1>
       <SearchResultContainer/>
     </div>
   );

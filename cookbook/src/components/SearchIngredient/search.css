@@ -5,3 +5,14 @@
 hr {
     color: transparent;
 }
+
+#search {
+    border-radius: 18px;
+}
+
+#submit {
+    background: black;
+    color: white;
+    border-radius: 15px;
+    border-color: black;
+}
