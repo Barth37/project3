@@ -1,10 +1,13 @@
 .input {
+   border: solid 3px black;
    text-align: center;
    margin: 10px;
    width: 70%;
+   display: block;
 }
 
 .sign-up {
+    border: solid 3px black;
     margin: 7px;
 }
 
